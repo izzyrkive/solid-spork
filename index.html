@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<!-- SEO/title stuff is here! -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome!</title>
+    <meta name="description"
+    content="Hi! My name is Isabel, a freelance graphic designer, creative designer, and aspiring web developer. Click the link to explore projects I've created, see what skills I have to offer, and drop me a message to collaborate.">
+    <meta name="keywords"
+    content="portfolio, creative portfolio, graphic design, web development, professional portfolio">
+    <link href="./assets/css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<!-- Website header/nav starts here! -->
+
+<body>
+
+    <header>
+      <nav class="top-nav flex-container justify-between align-items-center flex-column-mobile">
+        <a href="/" class="logo" aria-label="Isabel's portfolio homepage">
+          <img class="logo__img" src="./assets/images/logo.jpg" alt="Isabel Perez's Portfolio" />
+        </a>
+        <hr class="page-divider display-mobile" />
+        <div class="top-nav__links justify-between align-items-center">
+          <a href="#">Home</a>
+          <a href="#project-list">Portfolio</a>
+          <a href="#about-me">About Me</a>
+          <a href="./pages/contact-me.html">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+<!-- Main website content starts here! -->
+
+<main class="page-content">
+
+    <div class="page-title text-center">
+      <h1 class="name-font">Hi, I'm Isabel.</h1>
+      <h3><em>a freelance graphic designer, creative designer, and aspiring web developer</em></h3>
+    </div>
+
+    <hr class="page-divider" />
+
+<!-- Wavy text animation starts here -->
+
+<svg id="text-container" viewBox="0 0 1000 200" xmlns="http://www.w3.org/2000/svg">
+    <path id="text-curve" d="M0 100s269.931 86.612 520 0c250.069-86.612 480 0 480 0" fill="none"/>
+    
+    <text y="40" class="wavy-font">
+      <textPath class="wavy" id="text-path" href="#text-curve" startOffset="50">
+        〰︎ There's some cool stuff down here! 〰︎
+      </textPath>
+    </text>
+</svg>
+
+<!-- Wavy text animation ends here -->
+
+<!-- Featured Projects section -->
+
+<section>
+    <h2 id="project-list" class="text-center beep">✹ Featured Projects ✹</h2>
+    <div class="tiles flex-container flex-wrap justify-center">
+      <a href="/pages/projects/placeholder.html" class="large-tile">
+        <img src="./assets/images/coming-soon.jpg"
+          alt="Project 1" />
+        <div class="overlay flex-container justify-center align-items-center">
+          <h3>Project 1</h3>
+        </div>
+      </a>
+      
+      <a href="/pages/projects/placeholder2.html" class="tile">
+        <img src="./assets/images/coming-soon.jpg"
+          alt="Project 2" />
+        <div class="overlay flex-container justify-center align-items-center">
+          <h3>Project 2</h3>
+        </div>
+      </a>
+      <a href="/pages/projects/placeholder3.html" class="tile">
+        <img src="./assets/images/coming-soon.jpg"
+          alt="Project 3" />
+        <div class="overlay flex-container justify-center align-items-center">
+          <h3>Project 3</h3>
+        </div>
+      </a>
+      <a href="/pages/projects/placeholder4.html" class="tile">
+        <img src="./assets/images/coming-soon.jpg" alt="Coming soon!" />
+        <div class="overlay flex-container justify-center align-items-center">
+          <h3>Project 4</h3>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Featured projects section ends here -->
+
+  <hr class="page-divider" />
+
+  <!-- About Me starts here -->
+    
+  <section id="about-me" class="text-center beep">
+    <h2>✦ About Me ✦</h2>
+    <p class="ummm"><em><strong>Hi there!</strong></em> 
+      <br>My name is Isabel Perez. I'm an ex-Criminology major turned multidisciplinary artist/designer, and aspiring web developer based in Fort Lauderdale, FL.</p>
+      <img class="wompwomp" src="./assets/images/its-me-hi.jpg" alt="A girl with brown hair and brown eyes"/>
+  </section>
+
+
+  <hr class="page-divider" />
+
+  <!-- Contact Form -->
+
+  <section id="contact-form" class="contact-meep text-center">
+    <h2>Let's work together.</h2>
+    <button onclick="location.href='./pages/contact-me.html'" id="button" class="primary-button" aria-label="Get in touch with me!">
+      Get In Touch
+    </button>
+  </section>
+</main>
+
+<footer>
+    <p class="text-small text-center">&copy; <span class="text-italic">Isabel Perez *:･ﾟ✧</span></p>
+  </footer>
+
+  <script defer src="./assets/java/fwog.js"></script>
+</body>
+
+</html>
